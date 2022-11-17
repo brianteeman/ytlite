@@ -1,5 +1,6 @@
 # Lite Youtube
 ## Joomla 4 Lite Youtube Field Plugin
+![CLEAN (4)](https://user-images.githubusercontent.com/1296369/202509238-bfe80bef-4d44-4068-8dd1-5eebbbe0f791.png)
 
 ### Description
 > Renders faster than a sneeze.
