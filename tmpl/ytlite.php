@@ -13,6 +13,11 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Uri\Uri;
 
+if (empty($field->value))
+{
+    return;
+}
+
 /** @var Joomla\CMS\WebAsset\WebAssetManager $wa */
 $wa = $this->app->getDocument()->getWebAssetManager();
 $wa->registerAndUseStyle('plg_fields_ytlite', 'plg_fields_ytlite/lite-yt-embed.css');
