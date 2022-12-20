@@ -23,8 +23,9 @@ $wa = $this->app->getDocument()->getWebAssetManager();
 $wa->registerAndUseStyle('plg_fields_ytlite', 'plg_fields_ytlite/lite-yt-embed.css');
 $wa->registerAndUseScript('plg_fields_ytlite', 'plg_fields_ytlite/lite-yt-embed.js', [], ['defer' => true]);
 
+$url = $field->value;
 $regex = '/(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/m';
-preg_match($regex, $field->value, $matches);
+preg_match($regex, $url, $matches);
 $videoid= $matches[1] ?? '';
 ?>
 <lite-youtube videoid="<?php echo $videoid; ?>" style="background-image: url('https://i.ytimg.com/vi/<?php echo $videoid; ?>/maxresdefault.jpg');">
