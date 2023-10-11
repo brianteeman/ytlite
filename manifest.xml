@@ -18,6 +18,6 @@
 		</infourl>
 		<maintainer>Brian Teeman</maintainer>
 		<maintainerurl>https://brian.teeman.net</maintainerurl>
-		<targetplatform name="joomla" version="4.[01234]|(?!5)"/>
+		<targetplatform name="joomla" version="4.[01234]|?!5"/>
 	</update>
 </updates>
