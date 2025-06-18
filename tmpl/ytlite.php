@@ -28,7 +28,7 @@ $regex = '/(?:youtube(?:-nocookie)?\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\
 preg_match($regex, $url, $matches);
 $videoid= $matches[1] ?? '';
 ?>
-<lite-youtube videoid="<?php echo $videoid; ?>" style="background-image: url('https://i.ytimg.com/vi/<?php echo $videoid; ?>/maxresdefault.jpg');">
+<lite-youtube videoid="<?php echo $videoid; ?>" style="background-image: url('https://i.ytimg.com/vi/<?php echo $videoid; ?>/hqdefault.jpg');">
     <a href="<?php echo $url; ?>" class="lyt-playbtn" title="<?php echo Text::_('PLG_FIELDS_YTLITE_PLAY'); ?>"></a>
 </lite-youtube>
 
